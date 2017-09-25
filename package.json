@@ -1,0 +1,24 @@
+{
+  "name": "babel-plugin-modules-regexp",
+  "version": "0.1.0",
+  "description": "Babel plugin to apply a regexp on module names",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BBVAEngineering/babel-plugin-modules-regexp.git"
+  },
+  "scripts": {
+    "start": "qunit --watch tests/**/*-test.js",
+    "test": "qunit tests/**/*-test.js"
+  },
+  "author": "Adrián González Rus",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "amd-name-resolver": "^1.0.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-amd": "^6.24.1",
+    "qunit-eslint": "^1.0.0",
+    "qunitjs": "^2.4.0"
+  }
+}
