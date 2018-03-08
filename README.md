@@ -1,4 +1,5 @@
 # babel-plugin-modules-regexp
+
 [![Build Status](https://travis-ci.org/BBVAEngineering/babel-plugin-modules-regexp.svg?branch=master)](https://travis-ci.org/BBVAEngineering/babel-plugin-modules-regexp)
 [![GitHub version](https://badge.fury.io/gh/BBVAEngineering%2Fbabel-plugin-modules-regexp.svg)](https://badge.fury.io/gh/BBVAEngineering%2Fbabel-plugin-modules-regexp)
 [![npm version](https://badge.fury.io/js/ember-modal-service.svg)](https://badge.fury.io/js/babel-plugin-modules-regexp)
@@ -16,7 +17,7 @@ This plugin injects a regexp to replace default module names.
 
 ## Usage
 
-```
+```javascript
 {
   "plugins": [
     ["babel-plugin-modules-regexp", {
