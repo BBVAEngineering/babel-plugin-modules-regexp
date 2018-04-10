@@ -7,34 +7,35 @@ const amdNameResolver = require('amd-name-resolver');
 const Plugin = require('../src');
 
 describe('modules-regexp', () => {
-  function transform(code, moduleId, pluginOptions) {
-    const options = {
-      moduleId,
-      filename: `${moduleId}.js`,
-      resolveModuleSource: amdNameResolver.moduleResolve,
-      plugins: [
-        ['transform-es2015-modules-amd'],
-        [Plugin, pluginOptions],
-      ],
-    };
-    return babel.transform(code, options).code.trim();
-  }
+	function transform(code, moduleId, pluginOptions) {
+		const options = {
+			moduleId,
+			filename: `${moduleId}.js`,
+			resolveModuleSource: amdNameResolver.moduleResolve,
+			plugins: [
+				['transform-es2015-modules-amd'],
+				[Plugin, pluginOptions]
+			]
+		};
 
-  it('replaces module name', assert => {
-    const actual = transform('import bar from "bar"', 'foo', {
-      regexp: 'foo',
-      substr: 'foz',
-    });
+		return babel.transform(code, options).code.trim();
+	}
 
-    assert.ok(/^define\("foz"/.test(actual));
-  });
+	it('replaces module name', (assert) => {
+		const actual = transform('import bar from "bar"', 'foo', {
+			regexp: 'foo',
+			substr: 'foz'
+		});
 
-  it('replaces module dependencies', assert => {
-    const actual = transform('import bar from "bar"', 'foo', {
-      regexp: 'bar',
-      substr: 'baz',
-    });
+		assert.ok(/^define\("foz"/.test(actual));
+	});
 
-    assert.ok(/\["baz"\]/.test(actual));
-  });
+	it('replaces module dependencies', (assert) => {
+		const actual = transform('import bar from "bar"', 'foo', {
+			regexp: 'bar',
+			substr: 'baz'
+		});
+
+		assert.ok(/\["baz"\]/.test(actual));
+	});
 });
