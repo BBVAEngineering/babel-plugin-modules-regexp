@@ -5,7 +5,7 @@ module.exports = function modulesRegexp() {
 		pre(file) {
 			const opts = file.opts;
 			const getModuleId = opts.getModuleId;
-			const regexp = this.opts.regexp;
+			const regexp = new RegExp(this.opts.regexp);
 			const substr = this.opts.substr;
 
 			opts.getModuleId = (moduleName) => {
