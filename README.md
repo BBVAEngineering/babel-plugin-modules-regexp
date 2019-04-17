@@ -23,7 +23,7 @@ This plugin injects a regexp to replace default module names.
 {
   "plugins": [
     ["babel-plugin-modules-regexp", {
-      regexp: /(foo)/,
+      regexp: '(foo)',
       substr: 'test/$1'
     }]
   ]
