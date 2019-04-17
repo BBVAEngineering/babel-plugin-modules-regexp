@@ -1,6 +1,6 @@
 # Contributing
 
-This doc outlines the details of collaborating on this Ember addon.
+This doc outlines the details of collaborating on this repository.
 
 ## Installation
 
@@ -14,12 +14,5 @@ You need to follow our [eslint](https://github.com/BBVAEngineering/javascript/tr
 
 ## Running Tests
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+* `npm test`
 
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).

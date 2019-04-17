@@ -1,0 +1,16 @@
+{
+  "all": true,
+  "include": [
+    "src"
+  ],
+  "reporter": [
+    "html",
+    "json",
+    "json-summary",
+    "lcov"
+  ],
+  "statements": 100,
+  "functions": 100,
+  "branches": 100,
+  "lines": 100
+}
