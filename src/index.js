@@ -9,7 +9,7 @@ module.exports = function modulesRegexp() {
 			const substr = this.opts.substr;
 
 			opts.getModuleId = (moduleName) => {
-				moduleName = getModuleId ? getModuleId.apply(opts, moduleName) : moduleName;
+				moduleName = getModuleId ? getModuleId.apply(opts, [moduleName]) : moduleName;
 
 				return moduleName.replace(regexp, substr);
 			};
