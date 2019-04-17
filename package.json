@@ -19,6 +19,6 @@
     "@babel/plugin-transform-modules-amd": "^7.2.0",
     "eslint": "^5.16.0",
     "eslint-config-bbva": "^2.0.4",
-    "qunitjs": "^2.4.1"
+    "qunit": "^2.9.2"
   }
 }
