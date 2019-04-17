@@ -2,8 +2,10 @@
 
 [![Build Status](https://travis-ci.org/BBVAEngineering/babel-plugin-modules-regexp.svg?branch=master)](https://travis-ci.org/BBVAEngineering/babel-plugin-modules-regexp)
 [![GitHub version](https://badge.fury.io/gh/BBVAEngineering%2Fbabel-plugin-modules-regexp.svg)](https://badge.fury.io/gh/BBVAEngineering%2Fbabel-plugin-modules-regexp)
-[![npm version](https://badge.fury.io/js/ember-modal-service.svg)](https://badge.fury.io/js/babel-plugin-modules-regexp)
+[![NPM version](https://badge.fury.io/js/babel-plugin-modules-regexp.svg)](https://badge.fury.io/js/babel-plugin-modules-regexp)
 [![Dependency Status](https://david-dm.org/BBVAEngineering/babel-plugin-modules-regexp.svg)](https://david-dm.org/BBVAEngineering/babel-plugin-modules-regexp)
+[![codecov](https://codecov.io/gh/BBVAEngineering/babel-plugin-modules-regexp/branch/master/graph/badge.svg)](https://codecov.io/gh/BBVAEngineering/babel-plugin-modules-regexp)
+[![Greenkeeper badge](https://badges.greenkeeper.io/BBVAEngineering/babel-plugin-modules-regexp.svg)](https://greenkeeper.io/)
 
 ## Information
 
