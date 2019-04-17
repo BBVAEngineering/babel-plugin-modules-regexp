@@ -2,18 +2,16 @@
 /* globals QUnit */
 
 const { module: describe, test: it } = QUnit;
-const babel = require('babel-core');
-const amdNameResolver = require('amd-name-resolver');
+const babel = require('@babel/core');
 const Plugin = require('../src');
 
 describe('modules-regexp', () => {
 	function transform(code, moduleId, pluginOptions) {
 		const options = {
 			moduleId,
-			filename: `${moduleId}.js`,
-			resolveModuleSource: amdNameResolver.moduleResolve,
+			filenameRelative: `${moduleId}.js`,
 			plugins: [
-				['transform-es2015-modules-amd'],
+				['@babel/plugin-transform-modules-amd', { noInterop: true }],
 				[Plugin, pluginOptions]
 			]
 		};
