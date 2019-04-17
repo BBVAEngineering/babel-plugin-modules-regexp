@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-modules-regexp",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Babel plugin to apply a regexp on module names",
   "main": "src/index.js",
   "repository": {
