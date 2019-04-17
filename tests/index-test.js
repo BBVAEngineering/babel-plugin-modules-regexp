@@ -1,7 +1,6 @@
 'use strict';
-/* globals QUnit */
 
-const { module: describe, test: it } = QUnit;
+const { module: describe, test: it } = require('qunit');
 const babel = require('@babel/core');
 const Plugin = require('../src');
 
@@ -25,7 +24,7 @@ describe('modules-regexp', () => {
 			substr: 'foz'
 		});
 
-		assert.ok(/^define\("foz"/.test(actual));
+		assert.ok((/^define\("foz"/).test(actual));
 	});
 
 	it('replaces module dependencies', (assert) => {
@@ -34,6 +33,6 @@ describe('modules-regexp', () => {
 			substr: 'baz'
 		});
 
-		assert.ok(/\["baz"\]/.test(actual));
+		assert.ok((/\["baz"\]/).test(actual));
 	});
 });
