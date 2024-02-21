@@ -1,3 +1,5 @@
+# DEPRECATED
+
 # babel-plugin-modules-regexp
 
 [![Build Status](https://travis-ci.org/BBVAEngineering/babel-plugin-modules-regexp.svg?branch=master)](https://travis-ci.org/BBVAEngineering/babel-plugin-modules-regexp)
